@@ -55,7 +55,7 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -155,7 +155,6 @@ img {
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
-  font-family: inherit;
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
@@ -193,6 +192,10 @@ img {
 
 .features-heading-list {
   display: flex;
+}
+
+.features-heading-list .items {
+  width: 270px;
 }
 
 .features-heading-list .items:not(:last-child) {
@@ -280,6 +283,11 @@ footer {
   background-color: #2f303a;
 }
 
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .contacts {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -302,7 +310,6 @@ footer {
   color: #ffffff;
   margin-bottom: 20px;
   display: inline-block;
-  padding-top: 60px;
 }
 
 /*Portfolio*/
@@ -325,7 +332,6 @@ footer {
   line-height: 1.63;
   text-align: center;
   cursor: pointer;
-  font-family: inherit;
   border-radius: 4px;
   border: 0px;
   padding: 6px 22px;
@@ -340,9 +346,6 @@ footer {
 .portfolio-img {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
-  border: 0px 1px 1px 1px solid #eeeeee;
 }
 
 .portfolio-img-item > img {
@@ -352,10 +355,17 @@ footer {
 .portfolio-img-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
-.portfolio-img-item:nth-child(3n + 3) {
+.portfolio-img-item:nth-child(3n) {
   margin-right: 0px;
+}
+
+.portfolio-img-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
 
 .section-title {
