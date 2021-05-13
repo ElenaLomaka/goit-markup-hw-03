@@ -172,10 +172,6 @@ img {
 
 /*Особенности и чем мы занимаемся*/
 
-.features {
-  background-color: red;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -230,7 +226,6 @@ img {
 }
 /*Чем мы занимаемся*/
 .image-items {
-  background-color: royalblue;
   display: flex;
 }
 
