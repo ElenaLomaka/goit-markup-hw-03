@@ -89,10 +89,13 @@ img {
 .accent-logo {
   color: var(--secondary-accent-color);
   text-decoration: none;
-  margin-right: 93px;
 }
 
 /*Site nav*/
+
+.site-nav {
+  margin-left: 93px;
+}
 
 .site-nav-item {
   color: var(--title-text-color);
@@ -137,6 +140,8 @@ img {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-heading {
@@ -146,6 +151,9 @@ img {
   line-height: 1.36;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0px;
   margin-bottom: 30px;
 }
@@ -171,6 +179,10 @@ img {
 }
 
 /*Особенности и чем мы занимаемся*/
+
+.features {
+  padding-bottom: 47px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -227,6 +239,7 @@ img {
 /*Чем мы занимаемся*/
 .image-items {
   display: flex;
+  padding-top: 47px;
 }
 
 .image-items-img:not(:last-child) {
@@ -242,8 +255,16 @@ img {
   display: flex;
 }
 
+.team {
+  background-color: var(--primary-bg-color);
+}
+
 .team:not(:last-child) {
   margin-right: 30px;
+}
+
+.title-text {
+  padding: 30px 32px;
 }
 
 .team .title {
@@ -252,7 +273,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -260,10 +280,14 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-bottom: 30px;
 }
 
 /*Footer*/
+
+.margin-footer {
+  margin-bottom: 20px;
+  display: block;
+}
 
 .footer-address {
   color: #ffffff;
@@ -303,8 +327,6 @@ footer {
 
 .logo-footer {
   color: #ffffff;
-  margin-bottom: 20px;
-  display: inline-block;
 }
 
 /*Portfolio*/
@@ -312,7 +334,7 @@ footer {
 .button-portfolio {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .button-primary-portfolio:not(:last-child) {
@@ -343,16 +365,13 @@ footer {
   flex-wrap: wrap;
 }
 
-.portfolio-img-item > img {
+/*.portfolio-img-item > img {
   margin-bottom: 20px;
-}
+}*/
 
 .portfolio-img-item {
   margin-right: 30px;
   margin-bottom: 30px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio-img-item:nth-child(3n) {
@@ -361,6 +380,13 @@ footer {
 
 .portfolio-img-item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
+}
+
+.section-title-text {
+  padding-top: 20px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .section-title {
